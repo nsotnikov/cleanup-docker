@@ -4,7 +4,7 @@
 #   'sh <(curl -sL https://git.io/vDSx7)'
 
 clear
-printf "Cleanup Docker Shell Script \n\n"
+printf "Docker Cleanup Shell Script \n\n"
 printf "WARNING! WARNING!! WARNING!!!\n"
 printf "These script will STOP and REMOVE ALL docker containers, images and volumes!\n\n"
 

@@ -1,6 +1,6 @@
-# Cleanup docker shell script
+# Docker cleanup shell script
 **WARNING!**    
-**This script will stop and delete all docker containers, images and volumes on your host!**    
+**This shell script will stop and delete all docker containers, images and volumes on your host!**    
 **It will not be possible to restore them!**  
 
 ## Usage
