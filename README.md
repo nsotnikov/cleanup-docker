@@ -1,18 +1,17 @@
 # Cleanup docker shell script
 **WARNING!**    
-This script will stop and delete all docker containers, images and volumes on your host!    
-It will not be possible to restore them!
+**This script will stop and delete all docker containers, images and volumes on your host!**    
+**It will not be possible to restore them!**  
 
+## Usage
+Just execute following command
+```sh
+$ sh <(curl -sL https://git.io/vDSx7)
+```
 These shell script do:
   - stop and delete all docker containter
   - delete all images 
   - remove all docker volumes 
-
-## Usage
-Just run following command
-```sh
-$ sh <(curl -sL https://git.io/vDSx7)
-```
 
 ## Authors
 
