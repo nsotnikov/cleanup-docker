@@ -11,7 +11,7 @@ These shell script do:
 ## Usage
 Just run following command
 ```sh
-$ sh <(curl -sL https://git.io/vDS7Q)
+$ sh <(curl -sL https://git.io/vDSx7)
 ```
 
 ## Authors

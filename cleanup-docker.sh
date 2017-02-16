@@ -1,7 +1,7 @@
 #!/bin/sh
 #
 # To start the script just execute following commant
-#   'sh <(curl -sL https://git.io/vDS7Q)'
+#   'sh <(curl -sL https://git.io/vDSx7)'
 
 clear
 printf "Cleanup Docker Shell Script \n\n"
