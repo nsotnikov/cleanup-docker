@@ -3,10 +3,6 @@
 **This shell script will stop and delete all docker containers, images and volumes on your host!**    
 **It will not be possible to restore them!**  
 
-<p align="center">
-<img alt="Docker cleanup shell script" src=".github/terminal-scsh.png" width=100%">
-</p>
-
 ## Usage 
 Just execute following command in your Terminal (review [the script](https://raw.githubusercontent.com/nsotnikov/cleanup-docker/master/cleanup-docker.sh)):
 ```sh
@@ -16,6 +12,10 @@ This shell script will do:
   - stop and delete all docker containter
   - delete all images 
   - remove all docker volumes 
+
+<p align="center">
+<img alt="Docker cleanup shell script" src=".github/terminal-scsh.png">
+</p>
 
 ## Authors
 
