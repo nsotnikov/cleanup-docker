@@ -1,10 +1,20 @@
-#!/bin/sh
+#!/bin/bash
 #
 # To start the script just execute following commant
 #   'sh <(curl -sL https://git.io/vDSx7)'
 
 clear
-printf "Docker Cleanup Shell Script \n\n"
+# Check if user is root, if not advice how to run the script.
+if [[ $EUID -ne 0 ]]; then
+	echo
+	echo "This script must be run as root. Please re-run with sudo like:"
+	echo
+	echo "sudo bash $0"
+	echo
+	exit
+fi
+
+printf "Docker cleanup shell script \n\n"
 printf "WARNING! WARNING!! WARNING!!!\n"
 printf "These script will STOP and REMOVE ALL docker containers, images and volumes!\n\n"
 
@@ -12,10 +22,10 @@ do_clear() {
 while true; do
     read -p "Do you want to continue cleaning? (yes/no): " yn
     case $yn in
-        [Yy]* ) sudo docker stop $(sudo docker ps -a -q);
-                sudo docker rm $(sudo docker ps -a -q);
-                sudo docker rmi -f $(sudo docker images -q);
-                sudo docker volume rm $(sudo docker volume ls -q);
+        [Yy]* ) docker stop $(sudo docker ps -a -q);
+                docker rm $(sudo docker ps -a -q);
+                docker rmi -f $(sudo docker images -q);
+                docker volume rm $(sudo docker volume ls -q);
                 printf "\n\n\nCleaning completed. Thank you!\n\n\n";
                  break;;
         [Nn]* ) printf "\nScript cancelled\n\n";exit;;
