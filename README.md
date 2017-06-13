@@ -1,6 +1,6 @@
 # Docker cleanup shell script (outdated)
-====
-Since new Docker version 1.13 is released just use:
+
+### **Since new Docker version 1.13 is released just use:**
 
 ```sh
 $ docker system prune -a
@@ -12,10 +12,11 @@ WARNING! This will remove:
 	- all images without at least one container associated to them
 ```
 
-**WARNING!**    
-**This shell script will stop and delete all docker containers, images and volumes on your host!**    
-**It will not be possible to restore them!**  
+---
 
+**WARNING!**    
+This shell script will stop and delete all docker containers, images and volumes on your host!    
+It will not be possible to restore them!
 
 ## Usage 
 Just execute following command in your Terminal (review [the script](https://raw.githubusercontent.com/nsotnikov/cleanup-docker/master/cleanup-docker.sh)):
