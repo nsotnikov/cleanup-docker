@@ -1,6 +1,6 @@
-# Docker cleanup shell script (outdated)
+# [DEPRICATED] Docker cleanup shell script 
 
-### **Since new Docker version 1.13 is released just use:**
+### **Since new Docker version 1.13 is released my script is depricated, see below docker command:**
 
 ```sh
 $ docker system prune -a

@@ -3,7 +3,7 @@
 # To start the script just execute following commant
 #   'sh <(curl -sL https://git.io/vDSx7)'
 
-clear
+clear 
 # Check if user is root, if not advice how to run the script.
 if [[ $EUID -ne 0 ]]; then
 	echo
