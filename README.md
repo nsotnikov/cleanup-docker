@@ -2,10 +2,6 @@
 
 ### **Since new Docker version 1.13 is released my script is depricated, please use now docker command below:**
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/Si9sA3xqcc6PmTP8uNseuHd1/nsotnikov/cleanup-docker'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/Si9sA3xqcc6PmTP8uNseuHd1/nsotnikov/cleanup-docker.svg' />
-</a>
-
 ```sh
 $ docker system prune -a
 
